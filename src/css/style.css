@@ -20,7 +20,8 @@ body{margin:0;background:#fafafe}
 .banner:after{content:"";background:rgba(0,0,0,0.55);position:absolute;left:0;right:0;top:0;bottom:0}
 .banner .banner-details .sub-data{padding:0;display:flex;list-style:none;margin:0 0 30px 0}
 .banner .banner-details .sub-data li{padding:0 15px;position:relative;font-size:18px;text-shadow:1px 1px 4px #000}
-.banner .banner-details .sub-data li:after{content:"";width:6px;height:6px;display:inline-block;background:#fff;position:absolute;top:50%;margin-top:-3px;right:-3px;border-radius:50%}
+/* .banner .banner-details .sub-data li:after{content:"";width:6px;height:6px;display:inline-block;background:#fff;position:absolute;top:50%;margin-top:-3px;right:-3px;border-radius:50%} */
+.banner .banner-details .sub-data li:after{content:"";width:2px;height:17px;display:inline-block;background:#fff;position:absolute;top:50%;margin-top:-9px;right: 0px;border-radius:50%}
 .banner .banner-details .sub-data li:last-child:after{display:none}
 .banner .banner-details .social{display:flex;margin:0;padding:0;list-style:none}
 .banner .banner-details .social li{margin:0 10px}
@@ -100,7 +101,7 @@ h2:after,
 .line-heading:after{content:"";width:30px;height:2px;display:inline-block;position:absolute;background:#e3d66e;top:100%;left:0}
 .see-more{text-align:center;display:inline-block;width:100%;margin-top:20px}
 .see-more a{text-decoration:none;width:auto;height:auto;border:1px solid #000;color:#000;position:relative;overflow:hidden;padding:8px 20px;display:inline-block;font-weight:600}
-.see-more a:after{content:"";background:#000;position:absolute;top:-100%;left:0;-webkit-transition:0.3s all;transition:0.3s all;height:100%;width:100%;z-index:0}
+.see-more a:after{content:"";background:#112d4e;position:absolute;top:-100%;left:0;-webkit-transition:0.3s all;transition:0.3s all;height:100%;width:100%;z-index:0}
 .see-more a:hover:after{top:0}
 .see-more a:hover{color:#fff}
 .see-more a span{position:relative;z-index:1}
@@ -164,6 +165,11 @@ pre{margin-bottom:0}
 .section.contact .container { color: #fff; }
 .section.contact .container h2 { color: #fff; }
 .section.contact .container form button { color: #000; background-color: #fff;}
+.form-submit-button-container button:after {content: ""; background: #e3d66e; position: absolute; top: -100%; left: 0; -webkit-transition: 0.3s all; transition: 0.3s all; height: 100%; width: 100%; z-index: 0;}
+.form-submit-button-container button:hover:after{top:0; color: #fff;}
+.form-submit-button-container button span {position: relative; z-index: 1;}
+.form-submit-button-container button {color:#fff; position:relative; font-weight:600 }
+.section.contact .container .form-submit-button-container button:hover {color: #fff;}
 
 @-webkit-keyframes zoomIn{
     0%{opacity:0;-webkit-transform:scale3d(0.3,0.3,0.3);transform:scale3d(0.3,0.3,0.3)}
