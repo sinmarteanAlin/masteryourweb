@@ -17,8 +17,8 @@ const IndexPage = ({ data }) => (
   <Layout header="home">
     <SEO
       title={data.contentfulAboutMe.designation}
-      keywords={[`Rohit Gupta`, `Frontend Developer`, `Developer`]}
-    />
+      keywords={[`MasterYourWeb`, `Web Development`, `Blog`, `Youtube`]}
+      />
     <Banner data={data.contentfulAboutMe}></Banner>
 
     {data.contentfulSiteInformation.menus
@@ -54,11 +54,10 @@ const IndexPage = ({ data }) => (
         );
       })} */}
     {/*  Comment this for now */}
-
     {data.contentfulSiteInformation.menus
       .filter(item => item === "Photos")
       .map(t => {
-        return <Photos key="Photos" data={data.contentfulPhotos}></Photos>;
+        return <Photos key="PopularVideos" data={data.contentfulPhotos}></Photos>;
       })}
 
     {data.contentfulSiteInformation.menus

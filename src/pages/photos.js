@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Img from "gatsby-image";
+// import Img from "gatsby-image";
 import { graphql } from "gatsby";
 
 import Layout from "../components/layout";
@@ -15,21 +15,23 @@ export default class PhotosPage extends Component {
   }
 
   render() {
-    const { data } = this.props;
-    const { activePopup, selectedItem } = this.state;
+    // const { data } = this.props;
+    // const { activePopup, selectedItem } = this.state;
 
     return (
       <Layout>
         <SEO
-          title="Photos"
-          keywords={[`Rohit Gupta`, `Frontend Developer`, `Developer`, `Photo`]}
+          title="Popular Videos"
+          keywords={[`MasterYourWeb`, `Web Development`, `Blog`, `Youtube`]}
         />
-        <div className="site-container blogs-page" id="Blogs">
+        <div className="site-container blogs-page" id="PopularVideos">
           <div className="container">
             <div className="section-head">
-              <h1 className="line-heading h2">Photos</h1>
+              <h1 className="line-heading h2">Popular Videos</h1>
             </div>
-            <ul className="photos-page-list">
+            Work in progress...
+            {/* Comment for now, since it's work in progress */}
+            {/* <ul className="photos-page-list">
               {data.contentfulPhotos.photos.map((item, index) => {
                 return (
                   <li key={index} className="item">
@@ -51,8 +53,8 @@ export default class PhotosPage extends Component {
                   </li>
                 );
               })}
-            </ul>
-            {activePopup ? (
+            </ul> */}
+            {/* {activePopup ? (
               <div className="rg-popup">
                 <span
                   className="popup-layer"
@@ -80,30 +82,30 @@ export default class PhotosPage extends Component {
               </div>
             ) : (
               ""
-            )}
+            )} */}
           </div>
         </div>
       </Layout>
     );
   }
 }
-export const pageQuery = graphql`
-  query PhotosPageQuery {
-    contentfulPhotos {
-      photos {
-        file {
-          url
-        }
-        fluid(maxWidth: 600) {
-          base64
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
-        }
-      }
-    }
-  }
-`;
+// export const pageQuery = graphql`
+//   query PhotosPageQuery {
+//     contentfulPhotos {
+//       photos {
+//         file {
+//           url
+//         }
+//         fluid(maxWidth: 600) {
+//           base64
+//           aspectRatio
+//           src
+//           srcSet
+//           srcWebp
+//           srcSetWebp
+//           sizes
+//         }
+//       }
+//     }
+//   }
+// `;
