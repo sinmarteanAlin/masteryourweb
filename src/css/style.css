@@ -10,6 +10,7 @@ h3{font-size:22px}
 h4{font-size:18px}
 h5{font-size:10px}
 p{font-size:14px}
+#home {min-height: calc(100vh - 64px); } /* 64px is the Footer height */
 .banner{position:relative;height:100vh}
 a:hover{color:#d83d0a;text-decoration:underline}
 .banner .banner-details{position:absolute;top:50%;left:50%;z-index:9;display:flex;justify-content:center;align-items:center;flex-direction:column;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);width:90%;color:#fff}
