@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 export default class Contact extends Component {
-  render() {
+  render() {      
     return (
       <div className="contact section" id="Contact">
         <div className="container">
@@ -29,7 +29,7 @@ export default class Contact extends Component {
                 Message: <textarea name="message" required></textarea>
               </label>
             </div>
-            <div class="form-submit-button-container">
+            <div className="form-submit-button-container">
               <button type="submit">
                   <span>Send</span>
               </button>

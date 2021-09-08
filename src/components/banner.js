@@ -39,20 +39,21 @@ export default class Banner extends Component {
               </li>
               <li>
                 <a
-                  className="fab fa-instagram"
+                  className="fab fa-youtube"
                   href={data.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
                 ></a>
               </li>
-              <li>
+              {/* Comment for now */}
+              {/* <li>
                 <a
                   className="fab fa-linkedin-in"
                   href={data.linkdin}
                   target="_blank"
                   rel="noopener noreferrer"
                 ></a>
-              </li>
+              </li> */}
               <li>
                 <a
                   className="fab fa-github"

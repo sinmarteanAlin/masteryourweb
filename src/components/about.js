@@ -63,20 +63,20 @@ const Header = ({ data }) => (
                 </li>
                 <li>
                   <a
-                    className="fab fa-instagram"
+                    className="fab fa-youtube"
                     href={data.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
                   ></a>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     className="fab fa-linkedin-in"
                     href={data.linkdin}
                     target="_blank"
                     rel="noopener noreferrer"
                   ></a>
-                </li>
+                </li> */}
                 <li>
                   <a
                     className="fab fa-github"
