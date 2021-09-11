@@ -172,6 +172,10 @@ pre{margin-bottom:0}
 .form-submit-button-container button {color:#fff; position:relative; font-weight:600 }
 .section.contact .container .form-submit-button-container button:hover {color: #fff;}
 
+.alert.alert-succes{background-color: #e3d66e!important}
+.confirmation-alert {padding: 25px;}
+.btn.pull-right {float: right;}
+
 /* .logo img { width: 80%; } */
 @-webkit-keyframes zoomIn{
     0%{opacity:0;-webkit-transform:scale3d(0.3,0.3,0.3);transform:scale3d(0.3,0.3,0.3)}

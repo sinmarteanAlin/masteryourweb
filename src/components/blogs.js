@@ -6,7 +6,6 @@ import moment from "moment";
 export default class Blogs extends Component {
   render() {
     let { data } = this.props;
-    console.log('data.edge', data);
     
     return (
       <div className="blogs-section section" id="Blogs">
