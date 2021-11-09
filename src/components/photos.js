@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import { Link } from "gatsby";
 import Img from "gatsby-image";
+import ReactPlayer from 'react-player/lazy';
+
 var settings = {
   dots: true,
   speed: 500,
@@ -33,6 +35,16 @@ var settings = {
 export default class Photos extends Component {
   render() {
     const { data } = this.props;
+    const popularVideoLinks = [
+        'https://www.youtube.com/watch?v=VSMjskqPiuE', // HTML first video
+        'https://www.youtube.com/watch?v=k4aafnmtAok', // HTML 2nd video
+        'https://www.youtube.com/watch?v=BBJxTFLUBjc', // HTML 3rd video
+        'https://www.youtube.com/watch?v=YyidmJM27iI', // HTML 4th video
+        'https://www.youtube.com/watch?v=zFQ0wgn4rr0', // HTML 5th video
+        'https://www.youtube.com/watch?v=V-lmAa8Xa3c', // HTML 6th video
+        'https://www.youtube.com/watch?v=k10ZAJDgOcA', // HTML 7th video
+        'https://www.youtube.com/watch?v=8UyCtSpc5ik' // HTML 8th video
+    ];
 
     return (
       <div className="photos section" id="PopularVideos">
@@ -41,21 +53,19 @@ export default class Photos extends Component {
             <h2>Popular Videos</h2>
           </div>
           <div className="slider-section photos-list">
-              Work in progress...
-              {/* Comment for now, since it's still a work in progress */}
-            {/* <Slider {...settings}>
-              {data.photos.slice(0, 9).map((item, index) => {
-                return (
-                  <div key={index} className="photos-item">
-                    <Img
-                      fluid={item.fluid}
-                      objectFit="cover"
-                      objectPosition="50% 50%"
-                    />
-                  </div>
-                );
-              })}
-            </Slider> */}
+            <Slider {...settings}>
+                {popularVideoLinks.map((url, index) => {
+                    return (
+                        <div key={index} className="photos-item">
+                            <ReactPlayer 
+                                url={url}
+                                width={'320px'}
+                                height={'200px'}
+                            />
+                        </div>
+                    )
+                })}
+            </Slider>
           </div>
           <div className="see-more">
               {/* Comment for now, since it's still a work in progress */}
